@@ -1,0 +1,112 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #95e9d7;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fcfbfb;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: #f5f2f2;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #e8491d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#hero .btn:hover {
+  background-color: #cf3e17;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-grid {
+    flex-direction: column;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+  }
+}
